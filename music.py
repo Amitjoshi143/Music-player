@@ -138,25 +138,27 @@ songsname.reverse()
 
 
 
-btn6=Button(root,text="play",fg="powder blue",padx=10,pady=10,bd=4,width=10,bg="blue",font=('arial',15,'bold'),command=for_play)
-btn6.place(relx=0.8,rely=0.3,anchor=CENTER)
-btn5=Button(root,text="next",fg="powder blue",bg="blue",padx=10,pady=10,bd=4,width=10,state="normal",font=('arial',15,'bold'),command=for_next)
-btn5.place(relx=0.8,rely=0.4,anchor=CENTER)
+b1=Button(root,text="play",fg="powder blue",padx=10,pady=10,bd=4,width=10,bg="blue",font=('arial',15,'bold'),command=for_play)
+b1.place(relx=0.8,rely=0.3,anchor=CENTER)
 
-btn1=Button(root,text="stop",fg="powder blue",bg="red",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_stop)
-btn1.place(relx=0.2,rely=0.3,anchor=CENTER)
+b2=Button(root,text="next",fg="powder blue",bg="blue",padx=10,pady=10,bd=4,width=10,state="normal",font=('arial',15,'bold'),command=for_next)
+b2.place(relx=0.8,rely=0.4,anchor=CENTER)
+
+b3=Button(root,text="stop",fg="powder blue",bg="red",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_stop)
+b3.place(relx=0.2,rely=0.3,anchor=CENTER)
 
 
-btn4=Button(root,text="previous",fg="powder blue",bg="blue",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_prev)
-btn4.place(relx=0.2,rely=0.4,anchor=CENTER)
+b4=Button(root,text="previous",fg="powder blue",bg="blue",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_prev)
+b4.place(relx=0.2,rely=0.4,anchor=CENTER)
 
-btn2=Button(root,text="pause",fg="powder blue",bg="purple",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_pause)
-btn2.place(relx=0.2,rely=0.6,anchor=CENTER)
+b5=Button(root,text="pause",fg="powder blue",bg="purple",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_pause)
+b5.place(relx=0.2,rely=0.6,anchor=CENTER)
 
-btn3=Button(root,text="unpause",fg="powder blue",bg="maroon",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_unpause)
-btn3.place(relx=0.8,rely=0.6,anchor=CENTER)
-btn7=Button(root,text="Exit",fg="powder blue",bg="blue",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_exit)
-btn7.place(relx=0.2,rely=0.7,anchor=CENTER)
+b6=Button(root,text="unpause",fg="powder blue",bg="maroon",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_unpause)
+b6.place(relx=0.8,rely=0.6,anchor=CENTER)
+
+b7=Button(root,text="Exit",fg="powder blue",bg="blue",padx=10,pady=10,bd=4,width=10,font=('arial',15,'bold'),command=for_exit)
+b7.place(relx=0.2,rely=0.7,anchor=CENTER)
 
 current_label.pack()
 root.mainloop()
