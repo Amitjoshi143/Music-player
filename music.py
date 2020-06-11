@@ -14,6 +14,7 @@ root.configure(background="black")
 Tops = Frame(root,width=1200,height=100,bd=8,bg="black")
 Tops.pack(side=TOP)
 
+#image background
 #canvas = Canvas(root,width=300,height=160)
 #image = root.PhotoImage("‪C:\Users\AJ\Desktop\yo1.png")
 #canvas.create_image(0,0,anchor=NW,image=image)
@@ -26,7 +27,6 @@ lblinfo=Label(Tops,font=('Georgia',40,'bold'),text="DJ AJ",bd=10,fg="red")
 lblinfo.grid(row=0,column=0)
 lblinfo.pack()
 
-#root.minsize(400,400)
 songs=[]
 songsname=[]
 index=0
@@ -46,12 +46,9 @@ def for_next():
     if index >= len(songs):
         btn5['state'] = 'disabled'
         pygame.mixer.music.stop()
-        #txtdisplay.itemconfig(index - 1, {'fg': 'red'})
         index = 0
         showinfo("FYI", "playlist is over . u wanna continue press button PLAY")
     else:
-        #txtdisplay.itemconfig(index - 1, {'fg': 'green'})
-        #txtdisplay.itemconfig(index, {'fg': 'red'})
         pygame.mixer.music.load(songs[index])
         pygame.mixer.music.play()
         update_label()
@@ -123,8 +120,6 @@ songbox.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 selectdirectory()
 #https://www.tutorialspoint.com/python/tk_label.htm
-#label=Label(root,text="DJ AJ")
-#label.pack()
 
 #songbox=Listbox(root)
 #songbox.pack()
